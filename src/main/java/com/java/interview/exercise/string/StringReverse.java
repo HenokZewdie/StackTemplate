@@ -28,14 +28,14 @@ public class StringReverse {
 
     public static String rev(String str) {
 		char[] chars = new char[str.length()];
-		char[] temp = chars;
-		chars = str.toCharArray();
 		int j = 0;
 		for (int i=str.length()-1; i>=0; i--){
-			temp[i] = chars[j];
+			chars[j] = str.charAt(i);
 			j++;
 		}
-		System.out.println(temp);
-        return Arrays.toString(temp);
+
+        return String.copyValueOf(chars);
     }
+
+
 }
