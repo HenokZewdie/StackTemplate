@@ -8,12 +8,14 @@ public class StringReverse {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String str = scanner.nextLine();
+        StringBuilder stringBuilder = new StringBuilder(str);
+        System.out.println(stringBuilder.reverse());
         String output = rev(str);
         System.out.println(output);
         scanner.close();
     }
 
-    public static String reverse(String s) {
+/*    public static String reverse(String s) {
         if (s.length() == 0)
             return "";
         int len = s.length();
@@ -22,7 +24,7 @@ public class StringReverse {
         String test = reverse(sub);
         String res = A + test;
         return res;
-    }
+    }*/
 
     public static String rev(String str) {
 		char[] chars = new char[str.length()];

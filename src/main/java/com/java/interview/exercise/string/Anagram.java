@@ -14,7 +14,11 @@ public class Anagram {
         String str1 = scanner.nextLine();
         String str2 = scanner.nextLine();
 
-        System.out.println(getCall().getLname());
+        isAnagram(str1, str2);
+    }
+
+    public static void isAnagram(String str1, String str2) {
+        System.out.println(getCall());
 
         Map<Character, Integer> map1 = new HashMap<>();
         Map<Character, Integer> map12 = new HashMap<>();
@@ -29,23 +33,18 @@ public class Anagram {
         } else {
             System.out.println("NOT");
         }
-        scanner.close();
     }
 
-    private static Person getCall() {
+      public static String getCall() {
         Person person = new Person();
-        String test;
         try {
             person.setLname("Mena");
-             test = "TEST";
-            return person;
-        } catch (Exception e) {
+            return person.getLname();
+        } catch (Exception ignored) {
         } finally {
             person.setLname("Eliana");
-            System.out.println(person.getLname());
-            System.out.println("GETTTT");
-            test = "NEW TEST";
+            System.out.println("finally block " + person.getLname());
         }
-        return person;
+        return person.getLname();
     }
 }

@@ -23,14 +23,29 @@ public class SquareDistinctNumber<max> {
         getDates();
     }
 
-    private static int getMin(List<Integer> list) {
+    private static String getMiln(List<Integer> list) {
+        String test = null;
         try {
-            String test = "Test";
+            test = "Test";
+            return  test;
+        }catch (Exception e){
+
+        }finally {
+            test = "AAAAA";
+            System.out.println(test);
+        }
+        return test;
+    }
+
+    private static int getMin(List<Integer> list) {
+        String test = null;
+        try {
+             test = "Test";
             return  list.stream().mapToInt(nun -> nun).summaryStatistics().getMin();
         }catch (Exception e){
 
         }finally {
-            String test = "AAAAA";
+            test = "AAAAA";
             System.out.println(test);
         }
      return 0;
