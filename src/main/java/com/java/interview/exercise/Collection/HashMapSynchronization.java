@@ -14,7 +14,7 @@ public class HashMapSynchronization {
         
         // create a synchronized map
         Map<String,String> syncMap = Collections.synchronizedMap(map);
-        
+        map.forEach((k,v)-> System.out.println(k + "  " + v));
         System.out.println("Synchronized map :"+syncMap);
     }
 }

@@ -1,4 +1,4 @@
-package com.java.interview.exercise.random;
+package com.java.interview.exercise.MSXInternational;
 
 import java.util.*;
 

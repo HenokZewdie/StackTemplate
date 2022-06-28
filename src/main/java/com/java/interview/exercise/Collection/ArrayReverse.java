@@ -10,6 +10,9 @@ public class ArrayReverse {
         List<int[]> test = Arrays.asList(num);
         Collections.reverse(test);
         Collections.sort(x);
+        for (Integer i: x){
+            System.out.println(i);
+        }
         System.out.println(Arrays.asList(num).toArray());
     }
 }

@@ -16,7 +16,10 @@ public class ArrayFindByIndex {
             System.out.println("Index for " + num1[i] + " is: " + map.get(num1[i]));
         }
         String[] names = {"Jonas", "Tina", "Tom", "Steve", "Amanda", "Hanna", "Rebecca", "Carl"};
-
+        List a = new ArrayList();
+        a.add("as");
+        a.add(21);
+        
         List<String> test = Arrays.asList(names);
         Collections.sort(test);
         Collections.reverse(test);

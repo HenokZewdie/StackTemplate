@@ -1,4 +1,4 @@
-package com.java.interview.exercise.random.drawingshape;
+package com.java.interview.exercise.MSXInternational.drawingshape;
 
 public class ShapeFactory {
 

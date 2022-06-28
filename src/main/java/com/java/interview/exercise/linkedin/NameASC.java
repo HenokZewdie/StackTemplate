@@ -11,7 +11,9 @@ public class NameASC {
     public static void main(String[] args) {
        List<String> names = Arrays.asList("Jonas", "Tina", "Tom", "Steve", "Amanda", "Hanna", "Rebecca", "Carl");
         //names.sort(Comparator.comparing(String::toString));
-        List<String> test = names.stream().sorted(String::compareTo).collect(Collectors.toList());
+        List<String> test = names.stream()
+                .sorted(String::compareTo)
+                .collect(Collectors.toList());
         System.out.println(test);
     }
 }

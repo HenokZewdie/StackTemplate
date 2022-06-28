@@ -14,11 +14,12 @@ public class Anagram {
         String str1 = scanner.nextLine();
         String str2 = scanner.nextLine();
 
-        isAnagram(str1, str2);
+        //isAnagram(str1, str2);
+        checkIfAnagram("str1", "str11");
     }
 
     public static void isAnagram(String str1, String str2) {
-        System.out.println(getCall());
+        //System.out.println(getCall());
 
         Map<Character, Integer> map1 = new HashMap<>();
         Map<Character, Integer> map12 = new HashMap<>();
@@ -35,6 +36,20 @@ public class Anagram {
         }
     }
 
+    public static void checkIfAnagram(String str1, String str2){
+        boolean anagram = true;
+        for(char c:str1.toCharArray()){
+            if(!str2.contains(String.valueOf(c))){
+                System.out.println("Strings are Anagrams");
+                anagram = false;
+            }
+
+            if(anagram){
+                System.out.println("Strings are not Anagrams");
+                break;
+            }
+        }
+    }
       public static String getCall() {
         Person person = new Person();
         try {

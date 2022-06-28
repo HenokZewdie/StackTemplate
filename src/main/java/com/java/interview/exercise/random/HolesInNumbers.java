@@ -12,9 +12,9 @@ public class HolesInNumbers {
         for (int i = 0; i < number; i++) {
             totalAngels += holes[number % 10];
             number = number / 10;
-            List<Integer> numbersCopy = Arrays.asList(2,5,1,0,12,4);
+/*            List<Integer> numbersCopy = Arrays.asList(2,5,1,0,12,4);
             Collections.sort(numbersCopy, (a,b)->a.compareTo(b));
-            System.out.println(numbersCopy);
+            System.out.println(numbersCopy);*/
         }
         System.out.println(totalAngels);
     }
